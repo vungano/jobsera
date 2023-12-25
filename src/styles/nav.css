@@ -1,0 +1,144 @@
+.nav{
+    width: 100%;
+    padding-top: 15px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    
+}
+
+.mobile-nav{
+    position: absolute;
+    background-color: #071221;
+    opacity: 0.85;
+    padding: 100px 0;
+    width: 100%;
+    display:none;
+    transition-duration: 5s;
+    transition: ease-in;
+    z-index: 100;
+}
+
+.nav-visibility{
+    display: block;
+}
+
+.mobile-ul{
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    display: block;
+   
+}
+
+
+.logo{
+    margin-left: 60px !important;
+    height: 45px;
+    cursor: pointer;
+}
+
+.flexd{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+ 
+}
+
+.nav div ul{
+    display: flex;
+    list-style: none;
+    margin-right: 75px;
+    
+   }
+
+.nav-li{
+    margin-right: 20px;
+    letter-spacing: -0.4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #071221;    
+    border-width: 0px; 
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: fit-content;
+    display: block;
+    
+}
+
+.nav-li-2{
+    letter-spacing: -0.4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;    
+    border-width: 0px; 
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: fit-content;
+    display: block;
+    text-decoration: none !important;
+    margin-bottom: 30px;
+}
+
+.hamburger{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+  
+}
+
+.nav-button{
+    border: 0;
+    padding: 20px 0px 20px 20px;
+    background: none;
+}
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+    .nav{
+        padding-top: 0px;
+        margin-bottom: -10px;
+    }
+    
+    .logo{
+        margin-left: 25px !important;
+        height: 35px;
+        cursor: pointer;
+    }
+    
+    
+
+    .nav-li{
+        visibility: hidden;
+        width: 0px;
+        overflow: hidden;
+    }
+    
+    .hamburger{
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+            
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {}

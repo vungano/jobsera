@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main{
+    background-color: #FFFFFF;
+}
+
+a{
+    text-decoration: none !important;
+}

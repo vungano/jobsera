@@ -1,0 +1,149 @@
+.hero{
+    height: fit-content;
+    background-color: #E7D6C6;
+    padding-bottom: 50px;
+}
+
+.flex{
+    display: flex;
+    margin-top: 20px;
+}
+
+.side1{
+    margin-top: 30px;
+    width: 65%;
+    padding-left: 60px;
+}
+
+.side1 h1{
+    font-size: 60px;
+    width: 100%;
+    color: #071221;
+}
+
+.side1 p{
+    color: #071221;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 21px;
+    margin-top: -20px;
+    font-weight: 400;    
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 7px 7px 7px 20px;
+    margin-top: 50px;
+}
+
+.search-box img{
+    width: 20px;
+}
+
+.search-box input{
+    background-color: #fff;
+    border: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: #071221;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 65px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.search-box button{
+    background-color: #071221;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.side2{
+    width: 50%;
+    padding-top: 75px;
+    margin-left: -10px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    
+}
+
+.side2 img{
+    width: 120%;
+    margin-left: -50px;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+    .hero{
+        padding-bottom: 50px;
+    }
+    
+    .flex{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    
+    .side1{
+        margin-top: 15px;
+        width: 90vw;
+        padding-left: 35px;
+        order: 10 !important;
+    }
+    
+    .side1 h1{
+        font-size: 35px;
+        width: 80%;
+    }
+    
+    .side1 p{
+        font-size: 17px;
+        margin-top: -5px;
+        width: 88%;
+    }
+    
+    .search-box img{
+        width: 18px;
+    }
+    
+    .search-box input{
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 110px ;
+        height: 35px;
+        padding-left: 5px;
+    }
+    
+    .search-box button{
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+    
+    .side2{
+        margin-top: -60px;
+        width: 100%;
+        order: 1 !important;    
+        padding-left: 60px;
+    }
+    
+    .side2 img{
+        width: 100%;
+    }                
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {}

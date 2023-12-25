@@ -1,0 +1,57 @@
+.about-head{
+    color: #071221;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.about-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-flex img{
+    width: 44%;
+    margin: 0px 3%;
+}
+
+.about-flex p{
+    font-size: 20px;
+    width: 40%;
+    margin-right: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;   
+    margin-top: 2px;
+    cursor:auto;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+    .about-head{
+        font-size: 27px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+    
+    .about-flex{
+        display: block;
+    }
+    
+    .about-flex img{
+        width: 88%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .about-flex p{
+        font-size: 17px;
+        width: 85%;
+        display: block;
+        margin: 20px auto 50px auto;
+        
+    }
+    
+}

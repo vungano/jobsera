@@ -1,0 +1,128 @@
+
+.head-div{
+    height: 650px;
+    background-image: url("../img/professional_website.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.head-div img{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.head-div h1{
+    
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 55px;
+}
+
+.head-div h2{
+    font-weight: 400;
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.head-div h3{
+    font-size: 25px;
+    font-weight: 100;
+    width: 950px;
+    text-align: center;
+    color: #fff;
+}
+
+.text-div{
+ padding: 0px 150px 0px;
+ margin-bottom: 100px;
+}
+
+.text-div h1{
+    width: 100%;
+    color: #212529;
+    font-size: 28px;
+}
+
+.text-div p{
+    margin-top: -15px;
+    font-size: 23px;
+    font-weight: 100;
+    color: #212529;
+    width: 100%;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.text-div li{
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #212529;
+    width: 100%;
+    text-align: left;
+}
+
+.text-div img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 970px){
+.head-div{
+    padding-right: 7px;
+    height: 500px;
+    padding-left: 35px;
+}
+
+.head-div img{
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.head-div h1{
+    margin-top: 15px;
+    width: auto;
+    font-size: 35px;
+    
+}
+
+.head-div h2{
+    font-size: 22px;
+    width: auto;
+    
+    }
+
+.head-div h3{
+    font-size: 16px;
+    width: auto;
+    text-align: left;      
+}
+
+.text-div{
+    padding: 0px 20px 20px;
+   }
+
+   .text-div h1{
+       font-size: 26px;
+   }
+
+   .text-div p{
+       font-size: 17px;
+   }
+
+
+}
