@@ -7,6 +7,7 @@ import Article1 from "./components/Article1"
 import Article2 from "./components/Article2"
 import Article3 from "./components/Article3"
 import Admin from "./components/Admin"
+import NotFound from "./components/NotFound"
 import Nav from "./components/Nav"
 import './styles/style.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/articles/how_to_prepare_and_ace_job_interviews' element={<Article2/>}/>
                 <Route path='/articles/networking_strategies_for_career_advancement' element={<Article3/>}/>
                 <Route path='/adama_traore' element={<Admin/>} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
 
         </div>

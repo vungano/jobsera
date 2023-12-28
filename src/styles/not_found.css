@@ -1,0 +1,23 @@
+.not-found{
+    width: 100%;
+    
+}
+
+iframe{
+    margin-top: 80px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.lost-home{
+    width: 100%;
+    color: black;
+}
+
+.lost-home p{
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 30%;
+}
