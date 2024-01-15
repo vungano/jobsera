@@ -9,10 +9,11 @@ function SearchBar({searchQuery}) {
     const searchText = useSelector(state=> state.searchReducer)
     const dispatch = useDispatch()
     const [localsearchText, setLocalSearchText] = useState("")
+    const [variable, setVariable] = useState(false)
 
   function updateSearchField(event){
     setLocalSearchText(event.target.value)
-  }
+     }
 
   useEffect(()=>{
     if(searchQuery){
@@ -25,6 +26,7 @@ function SearchBar({searchQuery}) {
 
   function updateSearchReducer(){
     dispatch(updateSearch(localsearchText))
+    setVariable(variable => !variable)
   }
 
   return (
