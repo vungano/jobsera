@@ -12,7 +12,6 @@ function DetailedSearch() {
   return (
     <div className='main'>
         <Nav/>
-        <SearchBar searchQuery={searchQuery}/>
         <JobsList searchQuery={searchQuery}/>
     </div>
   )
