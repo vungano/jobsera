@@ -5,19 +5,33 @@ import SimilarJobItem from './SimilarJobItem'
 import DetailedJobItem from './DetailedJobItem'
 import DetailedJobItemSkeleton from './DetailedJobItemSkeleton'
 import { useParams } from 'react-router-dom'
+import Error from './Error'
 
+var count = 0 
 
 function DetailedJob({match}) {
 
   const {id} = useParams();
   const [jobObject, setJobObject] = useState({})
+  const [error, setError] = useState(false)
  
   //Function to get job object
   const getFeaturedJobs = async()=>{
-    const url = `https://jobsera.onrender.com/jobs/${id}`
-    const api = await fetch(url)
-    const data = await api.json()
-    setJobObject(data)
+    try{
+      const url = `https://jobsera.onrender.com/jobs/${id}`
+      const api = await fetch(url)
+      const data = await api.json()
+      setJobObject(data)
+    }
+    catch{
+      ++count 
+            if(count<5){
+                getFeaturedJobs()
+            }
+            else{
+                setError(true)
+            }
+    }
 }
 
   useEffect(()=>{
