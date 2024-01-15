@@ -1,0 +1,16 @@
+.error{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin-left: 450px;
+}
+
+.error p{
+text-align: center;    
+}
+
+@media only screen and (max-width: 40em) {
+    .error{
+        margin-left: 0px;
+    }
+}
