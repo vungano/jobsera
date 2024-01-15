@@ -9,7 +9,7 @@ function Categories() {
     const linkStyle = { color: 'white'};
 
     const category_item = jobsCategoriesData.map(item=>{
-        return <Link to={`/search/${item.title}`} style={linkStyle}> <JobCategoryItem item={item}/> </Link>
+        return <Link key={item.id} to={`/search/${item.title}`} style={linkStyle}> <JobCategoryItem item={item}/> </Link>
     })
     
   
